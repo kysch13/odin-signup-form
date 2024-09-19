@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-up Form | The Odin Project</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section class="main">
+        <div class="left-col">
+            <div class="logo">
+                <img src="images/logo.svg" alt="Logo" width="300">
+            </div>
+        </div>
+        <div class="right-col">
+            <div class="intro-text">
+                <h1>We innovate on behalf of humanity.</h1>
+                <p> It doesn't matter if you've never driven a tractor, mowed a lawn, or operated a dozer. With our role in helping produce food, fiber, fuel, and infrastructure, we work for every single person on the planet.</p>
+            </div>
+            <form id="sign-up-form" action="" method="post">
+                <fieldset>
+                    <legend>Let's do this!</legend>
+                    <div class="fieldset-inner">
+                        <div>
+                            <label for="first_name">FIRST NAME</label>
+                            <input type="text" id="first_name" name="first_name" required>    
+                        </div>
+                        <div>
+                            <label for="last_name">LAST NAME</label>
+                            <input type="text" id="last_name" name="last_name" required>
+                        </div>
+                        <div>
+                            <label for="email">EMAIL</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div>
+                            <label for="phone">PHONE NUMBER</label>
+                            <input type="tel" id="phone" name="phone" >
+                        </div>
+                        <div>
+                            <label for="password">PASSWORD</label>
+                            <input type="password" id="password" name="password" minlength="8" required>
+                            <span class="input-error-msg">* Passwords do not match.</span>
+                        </div>
+                        <div>
+                            <label for="password_confirm">CONFIRM PASSWORD</label>
+                            <input type="password" id="password_confirm" name="password_confirm" minlength="8" required>    
+                        </div>
+                    </div>
+                </fieldset>
+                <button type="submit">Create Account</button>
+            </form>
+            <div>
+                Already have an account? <a href="#">Log in</a>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

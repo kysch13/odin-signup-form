@@ -1,0 +1,154 @@
+:root {
+    --deere-green : #367c2b;
+}
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+a:link, a:hover, a:visited, a:active {
+    text-decoration: none;
+    color: var(--deere-green);
+    font-weight: 600;
+}
+
+section.main {
+    display: flex;
+    min-height: 100vh;
+}
+
+.left-col {
+    flex: 1;
+    background: url(../images/grass.jpg) no-repeat center bottom;
+    background-size: cover;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+    padding: 40px 0;
+    background: #ffffff77;
+    backdrop-filter: blur(2px);
+    margin-top: 33%;
+}
+
+.right-col {
+    flex: 2;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #f7f7f7;
+}
+
+.right-col > div {
+    padding: 0 30px;
+}
+
+.intro-text {
+    font-size: 1.1rem;
+    line-height: 1.75;
+}
+
+form {
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+fieldset {
+    background: #ffffff;
+    border: none;
+    padding: 30px 0;
+    width: 100%;
+    filter: drop-shadow(1px 3px 2px #33333311);
+    margin-bottom: 30px;
+}
+
+
+.fieldset-inner {
+    padding: 0 30px;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 500px;
+}
+
+legend {
+    display: block;
+    width: 100%;
+    background-color: #ffffff;
+    padding: 30px 30px 0 30px;
+    font-size: 1.25rem;
+}
+
+.fieldset-inner > div {
+    flex: 1;
+    margin-bottom: 20px;
+    flex-basis: 50%;
+}
+
+label, input {
+    display: block;
+}
+
+label {
+    font-size: 0.75rem;
+    letter-spacing: 0.1rem;
+    color: #555555;
+    margin-bottom: 4px;
+    padding-left: 2px;
+}
+
+input {
+    padding: 6px 8px;
+    border: 1px solid #eaeaea;
+    border-radius: 4px;
+}
+
+.input-error-msg {
+    display: none;
+}
+
+input:focus {
+    filter: drop-shadow(1px 1px 1px #eaeaea);
+    outline: 1px solid rgb(44, 44, 239);
+}
+
+input:focus:invalid {
+    outline: 1px solid #c00;
+}
+
+input:focus:valid {
+    outline: 1px solid var(--deere-green);
+}
+
+
+input[type="password"]:focus:invalid ~ .input-error-msg {
+    display: block;
+    color: #c00;
+    font-size: 0.8rem;
+}
+
+
+button {
+    background: var(--deere-green);
+    padding: 10px 50px;
+    border: none;
+    border-radius: 6px;
+    color: #ffffff;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 1rem;
+    margin-left: 30px;
+}
+
+button:hover {
+    filter: brightness(1.1);
+}
